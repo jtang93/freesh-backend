@@ -20,7 +20,7 @@ class Api::V1::ListingsController < ApplicationController
   private
   def user_params
 
-    params.require(:listing).permit(:user_id, :item, :condition, :location, :picture)
+    params.require(:listing).permit(:user_id, :item, :condition, :location, :picture, :coordinates, :tags)
 
   end
 
